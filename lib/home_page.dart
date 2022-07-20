@@ -7,6 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'BMI Calc',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -32,7 +33,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Center(
+          child: Text(widget.title),
+        ),
       ),
       body: const Center(
         child: Text("Body Text"),
